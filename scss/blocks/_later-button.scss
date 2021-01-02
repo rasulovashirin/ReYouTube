@@ -1,0 +1,26 @@
+.later-button{
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  background-image: url(../img/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  cursor: pointer;
+opacity: 0.3;
+  &:focus{
+    outline: 0;
+  }
+  &:hover{
+    opacity: 0.6;
+  }
+  &:active{
+    opacity: 0.8;
+  }
+}

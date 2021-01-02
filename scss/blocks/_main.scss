@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+}
+.main__left {
+  height: calc(100vh - 87px);
+  overflow-y: auto;
+  width: 255px;
+}
+.main__right {
+  height: calc(100vh - 87px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.main__right-subscribed{
+  margin-bottom: 50px;
+}
+.main__right-recommended{
+  margin-bottom: 50px;
+}
+.main__right-channel {
+  margin-bottom: 50px;
+}

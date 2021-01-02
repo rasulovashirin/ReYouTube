@@ -1,0 +1,112 @@
+.header {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.945);
+  display: flex;
+  align-items: center;
+  padding:20px 32px;
+}
+.header__menu-button {
+  width: 20px;
+  height: 30px;
+  background-color: transparent;
+  border: 0;
+  background-image: url("../img/menu.svg");
+  background-position: center center;
+  background-size: 20px 17px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-right: 28px;
+}
+.header__search-form {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.header__search-input {
+  min-width: 830px;
+  padding: 12px 23px;
+  background-color: #EBEBEB;
+  opacity: 0.3;
+  border-radius: 22px;
+  border: none;
+  &:focus{
+    outline: 0;
+  }
+}
+.header__search-button{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 0;
+  background-image: url("../img/search.svg");
+  background-position: center center;
+  background-size: 19px 19px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  list-style-type: none;
+}
+.header__item {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.header__link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.header__item--create .header__link {
+  background-image: url(../img/camera.svg);
+  background-size: 27px 20px;
+}
+.header__item--apps .header__link{
+  background-image: url(../img/information.svg);
+  background-size: 21px 21px;
+}
+.header__item--notifications .header__link{
+  background-image: url(../../img/notification-bell.svg);
+  background-size: 22px 26px;
+}
+// .header__item--account .header__link{
+// }
+.header__user-img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+@include breakpoint-down (1380){
+  .header__search-input{
+    min-width: 700px;
+  }
+}
+
+@include breakpoint-down (1220){
+  .header__search-input{
+    min-width: 600px;
+  }
+}
+
+@include breakpoint-down (1120){
+  .header__search-input{
+    min-width: 100%;
+  }
+}

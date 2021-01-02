@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <button class="header__menu-button"></button>
+
+    <a class="logo" href="index.html">
+      <img class="logo__img" src="img/logo.svg" alt="logo" width="116" height="25">
+    </a>
+
+    <form class="header__search-form" action="https://echo.htmlacademy.ru" method="GET">
+      <input class="header__search-input" type="text" name="search-input" aria-label="Search input" placeholder="Search">
+      <button class="header__search-button" type="search"></button>
+    </form>
+
+    <ul class="header__list">
+      <li class="header__item header__item--create">
+        <a class="header__link" href="#"></a>
+      </li>
+      <li class="header__item header__item--apps">
+        <a class="header__link" href="#"></a>
+      </li>
+      <li class="header__item header__item--notifications">
+        <a class="header__link" href="#"></a>
+      </li>
+      <li class="header__item header__item--account">
+        <a class="header__link" href="#">
+          <img class="header__user-img" src="img/userpic.png" alt="user picture" width="40" height="40" srcset="img/userpic.png 1x, img/userpic@2x.png 2x">
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <main class="main">
+    <section class="main__left main__left--close left">
+      <ul class="left__list left__list--top">
+        <li class="left__item left__item--home left__item--active"><a href="#" class="left__link">Home</a></li>
+        <li class="left__item left__item--trending"><a href="#" class="left__link">Trending</a></li>
+        <li class="left__item left__item--subscriptions"><a href="#" class="left__link">Subscriptions</a></li>
+      </ul>
+
+      <div class="left__center">
+        <ul class="left__list left__list--center">
+          <li class="left__item left__item--library"><a href="#" class="left__link">Library</a></li>
+          <li class="left__item left__item--history"><a href="#" class="left__link">History</a></li>
+          <li class="left__item left__item--later"><a href="#" class="left__link">Watch later</a></li>
+          <li class="left__item left__item--favourites"><a href="#" class="left__link">Favourites</a></li>
+          <li class="left__item left__item--liked"><a href="#" class="left__link">Liked videos</a></li>
+          <li class="left__item left__item--music"><a href="#" class="left__link">Music</a></li>
+          <li class="left__item left__item--games"><a href="#" class="left__link">Games</a></li>
+        </ul>
+        <button class="left__link left__link--more-button">Show more</button>
+      </div>
+
+      <div class="left__subscriptions">
+        <h3 class="left__subscriptions-heading">Subscriptions</h3>
+        <ul class="left__list left__list--subscriptions">
+          <li class="left__item left__item--gussie"><a href="#" class="left__link">Gussie Singleton</a></li>
+          <li class="left__item left__item--nora"><a href="#" class="left__link">Nora Francis</a></li>
+          <li class="left__item left__item--belle"><a href="#" class="left__link">Belle Briggs</a></li>
+          <li class="left__item left__item--eunice"><a href="#" class="left__link">Eunice Cortez</a></li>
+          <li class="left__item left__item--emma"><a href="#" class="left__link">Emma Hanson</a></li>
+          <li class="left__item left__item--leah"><a href="#" class="left__link">Leah Berry</a></li>
+        </ul>
+
+
+      </div>
+
+      <a href="#" class="left__link left__link--settings">Settings</a>
+    </section>
+    <section class="main__right">
+      <div class="main__right-subscribed subscribed">
+        <div class="subscribed__top">
+          <a class="subscribed__user-link" href="#">
+            <img class="subscribed__user-img" src="img/dolli.png" alt="dollie" width="50" height="50" srcset="img/dolli.png 1x, img/dolli@2x.png 2x">
+            Dollie Blair
+          </a>
+          <div class="slide-buttons">
+            <button class="slide-button slide-button--prev" type="button"></button>
+            <button class="slide-button slide-button--next" type="button"></button>
+          </div>
+        </div>
+
+        <ul class="subscribed__list"></ul>
+      </div>
+
+      <div class="main__right-recommended recommended">
+        <div class="recommended__top">
+          <h3 class="recommended__heading">Recommended</h3>
+
+          <div class="slide-buttons">
+            <button class="slide-button slide-button--prev" type="button"></button>
+            <button class="slide-button slide-button--next" type="button"></button>
+          </div>
+        </div>
+
+        <ul class="recommended__list"></ul>
+
+      </div>
+
+      <div class="main__right-channel channel">
+        <div class="channel__top">
+          <a class="channel__user-link" href="#">
+            <img class="channel__user-img" src="img/food.png" alt="dollie" width="50" height="50" srcset="img/food.png 1x, img/food@2x.png 2x">
+            Food & Drink
+          </a>
+          <p class="channel__text">Recommended channel for you</p>
+          <button class="channel__subscribe-button">Subscribe 2.3m</button>
+
+          <div class="slide-buttons">
+            <button class="slide-button slide-button--prev" type="button"></button>
+            <button class="slide-button slide-button--next" type="button"></button>
+          </div>
+        </div>
+        <ul class="channel__list">
+        </ul>
+      </div>
+
+      <div class="main__watch-later later">
+        <div class="later__top">
+          <h3 class="later__heading">Watch Later</h3>
+
+          <div class="slide-buttons">
+            <button class="slide-button slide-button--prev" type="button"></button>
+            <button class="slide-button slide-button--next" type="button"></button>
+          </div>
+        </div>
+        <ul class="later__list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <template class="subscribed-template">
+    <li class="subscribed__item">
+      <a href="#" class="subscribed__link">
+        <img class="subscribed__img" src="img/video-img-1.jpg" alt="video img" width="250" height="150" srcset="img/video-img-1.jpg 1x, img/video-img-1@2x.jpg 2x">
+        <h4 class="subscribed__video-heading">A Brief History Of Creation</h4>
+        <div class="subscribed__video-info">
+          <p class="subscribed__video-view">80k views</p>
+          <p class="subscribed__video-day">30 days ago</p>
+          <p class="subscribed__video-owner">Dollie Blair</p>
+          <p class="subscribed__video-time">4:15</p>
+        </div>
+      </a>
+      <button class="later-button"></button>
+    </li>
+  </template>
+
+  <template class="recommended-template">
+    <li class="recommended__item">
+      <a href="#" class="recommended__link">
+        <img class="recommended__img" src="img/recommend-img-1.jpg" alt="video img" srcset="img/recommend-img-1.jpg 1x, img/recommend-img-1@2x.jpg 2x">
+        <h4 class="recommended__video-heading">Dude You Re Getting A Telescope</h4>
+        <div class="recommended__video-info">
+          <p class="recommended__video-view">37k views</p>
+          <p class="recommended__video-day">5 months ago</p>
+          <p class="recommended__video-owner">Gussie French</p>
+          <p class="recommended__video-time">3:40</p>
+        </div>
+      </a>
+      <button class="later-button"></button>
+    </li>
+  </template>
+
+  <template class="channel-template">
+    <li class="channel__item">
+      <a href="#" class="channel__link">
+        <img class="channel__img" src="img/food-img-1.jpg" alt="video img" srcset="img/food-img-1.jpg 1x, img/food-img-1@2x.jpg 2x">
+        <h4 class="channel__video-heading">Astronomy Or Astrology</h4>
+        <div class="channel__video-info">
+          <p class="channel__video-view">240k views</p>
+          <p class="channel__video-day">4 months ago</p>
+          <p class="channel__video-owner">Food & Drink</p>
+          <p class="channel__video-time">7:36</p>
+        </div>
+      </a>
+      <button class="later-button"></button>
+    </li>
+  </template>
+
+  <template class="later-template">
+    <li class="later__item">
+      <a href="#" class="later__link">
+        <img class="later__img" src="img/recommend-img-1.jpg" alt="video img" srcset="img/recommend-img-1.jpg 1x, imlater-img-1@2x.jpg 2x">
+        <h4 class="later__video-heading">Dude You Re Getting A Telescope</h4>
+        <div class="later__video-info">
+          <p class="later__video-view">37k views</p>
+          <p class="later__video-day">5 months ago</p>
+          <p class="later__video-owner">Gussie French</p>
+          <p class="later__video-time">3:40</p>
+        </div>
+      </a>
+      <button class="later-button"></button>
+    </li>
+  </template>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
