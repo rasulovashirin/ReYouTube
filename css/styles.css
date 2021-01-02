@@ -1248,6 +1248,10 @@ img {
   opacity: 0.8;
 }
 
+.later {
+  margin-bottom: 50px;
+}
+
 .later__top {
   display: -webkit-box;
   display: -ms-flexbox;
